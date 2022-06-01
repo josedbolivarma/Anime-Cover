@@ -3,6 +3,8 @@ import Banner from '../components/Banner/Banner'
 import GalleryContainer from '../containers/GalleryContainer/GalleryContainer'
 
 const Home = () => {
+  console.log("Gallery.js");  
+
   return (
     <div>
         <Banner /> 

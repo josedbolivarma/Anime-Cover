@@ -1,3 +1,6 @@
+$small: 600px;
+$large: 900px;
+
 .gallery {
     width: 100%;
     height: 810px;
@@ -30,8 +33,19 @@
 
     .gallery__container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: .8rem;
+
+        @media screen and (min-width: $small) {
+                grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width: $large) {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
+
+
+
 
