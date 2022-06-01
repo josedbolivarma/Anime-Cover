@@ -1,0 +1,7 @@
+.galleryContainer {
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 2fr .8fr;
+    gap: 2rem;
+}

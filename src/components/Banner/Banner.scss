@@ -1,0 +1,23 @@
+.banner {
+    width: 100%;
+    height: 80vh;
+    background-image: url('https://www.teahub.io/photos/full/250-2509589_sword-art-online-desktop-wallpaper-hd.jpg');
+
+}
+
+.banner__container {
+    width: 90%;
+    height: 100%;
+    margin: 2rem auto;
+}
+
+.banner__containerText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 1rem;
+    color: #FFF;
+}
