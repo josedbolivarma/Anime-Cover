@@ -1,36 +1,45 @@
 import React from 'react';
-import './Banner.scss';
+import { Title } from '../../shared';
+import styles from './Banner.module.scss';
 
 const Banner = () => {
   return (
-    <div className='banner'>
-        <div className='banner__container'>
-          <div className='banner__containerText'>
+    <div className={ styles.banner }>
+        <div className={ styles.banner__container }>
+          <div className={ styles.banner__containerText }>
 
+        {/* Title */}
         <div>
-          Choose your Favorite
+          <Title title="Kill The Kill" size={2.8} color="#FFF" />
+          <Title title="New Episodes" size={2.8} color="#FFF" />
+          <Title title="Announced Today" size={2.8} color="rgb(255,253,122)" />
         </div>
+        {/* Title */}
 
-        <div>
-          Kill the Kill <br />
-          New Episodes <br />
-          Announced today 
-        </div>
-
-        <div>
+        <p>
           SAO is an anime of the top around the world
+        </p>
+
+        <div className={ styles.btn__box }>
+          <button 
+            className={ styles.btn__primary }
+          >READ MORE</button>
+
+          <button className={ styles.btn__secondary }>API</button>
+          <button className={ styles.btn__secondary }>FOLLOW</button>
         </div>
 
-        <div>
-          <button>CLICK</button>
-          <button>CLICK</button>
-          <button>CLICK</button>
+        <div className={ styles.box__actionBtn}>
+          <div className={ `${styles.action__btn} ${styles.action__btnOne}` }>
+            <p>{'<'}</p>
+            <p>LEFT</p>
+          </div>
+          <div className={ `${styles.action__btn} ${styles.action__btnTwo}` }>
+            <p>RIGHT</p>
+            <p>{'>'}</p>
+          </div>
         </div>
 
-        <div>
-          <button>LEFT</button>
-          <button>RIGHT</button>
-        </div>
         </div>
         </div>
     </div>
