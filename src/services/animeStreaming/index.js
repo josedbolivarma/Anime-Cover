@@ -1,6 +1,13 @@
 import { instance } from "../configBaseAxiosUrl";
 
 export const animeStreamingServices = () => {
+    
+    const getCharacters = () => {
+        return instance({
+            method: "GET",
+            url: `/characters?order_by=favorites`
+        });
+    }
 
     // Pantalla principal 'animes que estás en el top'
     const getTop = (tier) => {
@@ -83,6 +90,7 @@ export const animeStreamingServices = () => {
         getEpisodes,
         getNews,
         getMoreInfo,
-        getSearchAnimeByName
+        getSearchAnimeByName,
+        getCharacters
     }
 }

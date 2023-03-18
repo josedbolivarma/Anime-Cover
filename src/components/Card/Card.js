@@ -1,17 +1,17 @@
 import React from 'react';
-import './Card.scss';
+import styles from './Card.module.scss';
 
 const Card = ({ title, imageBg }) => {
   return (
-    <div className='card' style={{
+    <div className={ styles.card } style={{
         backgroundImage: `url(${imageBg})`
     }}>
-        <div className='card__container'>
-            <h2 className='card__title'>{ title }</h2>
-            <p className='card__text'>This anime is beautifull</p>
+        <div className={ styles.card__container }>
+            <h2 className={ styles.card__title }>{ title }</h2>
+            <p className={ styles.card__text }>This anime is beautifull</p>
         </div>
 
-        <div className='card__background'/>
+        <div className={ styles.card__background } />
     </div>
   )
 }
