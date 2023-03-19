@@ -1,13 +1,12 @@
 import React from 'react';
-import Home from '../../pages/Home/Home';
-import Header from '../../components/Header/Header.js';
+import { BrowserRouter } from 'react-router-dom';
+import { DashboardRoutes } from '../DashboardRoutes.jsx';
 
 const AppRouter = () => {
   return (
-    <div>
-      <Header />
-        <Home />
-    </div>
+      <BrowserRouter>
+        <DashboardRoutes />
+      </BrowserRouter>
   )
 }
 

@@ -6,12 +6,14 @@ export const useFetch = (fetchUrl) => {
     const [isLoading, setIsLoading] = useState(true);
 
     const getData = () => {
+        setIsLoading(true);
         axios.get(fetchUrl)
         .then((resp) => {
           const data = resp.data;
           setData(data.data);
           console.log(data.data, ' DATA');
-        })
+        });
+        setIsLoading(false);
     };
 
     useEffect(() => {
