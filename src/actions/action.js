@@ -1,6 +1,6 @@
 import { animeStreamingServices } from "../services/animeStreaming";
 
-const { getCharacters } = animeStreamingServices();
+const { getCharacters, getAnimeById } = animeStreamingServices();
 
 const actGetCharacters = async () => {
     try {
@@ -11,8 +11,18 @@ const actGetCharacters = async () => {
     }
 }
 
+const actGetAnimeById = async (animeId) => {
+    try {
+        const res = await getAnimeById(animeId);
+        return res.data.data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 export const animeActions = () => {
     return {
-        actGetCharacters
+        actGetCharacters,
+        actGetAnimeById
     };
 };

@@ -21,8 +21,16 @@ export const animeStreamingServices = () => {
     const getGenre = (type) => {
         return instance({
             method: 'GET',
-            url: `search/anime?genre=${type}`
+            url: `/search/anime?genre=${type}`
         })
+    }
+
+    // Obtiene todos los detalles del anime especificado por Id
+    const getAnimeById = (animeId) => {
+        return instance({
+           method: "GET",
+           url: `/anime/${animeId}/full` 
+        });
     }
 
     // Personajes y actores que prestan sus voces
@@ -91,6 +99,7 @@ export const animeStreamingServices = () => {
         getNews,
         getMoreInfo,
         getSearchAnimeByName,
-        getCharacters
+        getCharacters,
+        getAnimeById
     }
 }
