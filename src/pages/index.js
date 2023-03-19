@@ -1,2 +1,2 @@
 export * from "./Home/Home";
-export * from "./AnimeDetail/AnimeDetail";
+export * from "./AnimeScreen/AnimeScreen";

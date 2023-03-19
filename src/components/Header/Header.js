@@ -5,13 +5,13 @@ export const Header = () => {
 
   return (
     <div className={ styles.header }>
+      <div className={ styles.header__container }>
       <img 
-        src='https://preview.redd.it/u389ge466bb11.jpg?width=600&format=pjpg&auto=webp&s=5402236a21f43269967d996ddd3ce9154ff0019c' 
+        src='https://res.cloudinary.com/duzncuogi/image/upload/v1679199983/anime_cover/animelogo-PhotoRoom.png-PhotoRoom_lgyp1k.png' 
         className={ styles.header__logo }
         alt='Header Logo'
       />
 
-      <div className={ styles.header__container }>
 
       <div className={ styles.header__menu }>
         <h3>Comming Soon</h3>
@@ -19,9 +19,9 @@ export const Header = () => {
         <h3>Most Popular</h3>
         <h3>Genre</h3>
         <div className={ styles.header__box }>
-        <h3>Hello José David</h3>
+        <h3>LOG IN</h3>
         <img 
-          src='https://novascotiatoday.com/wp-content/uploads/2021/10/eren-yeager-..jpg' 
+          src='https://sportshub.cbsistatic.com/i/2022/05/17/ede30685-59f4-435a-a886-58fa06ba361a/bleach-sousuke-aizen-anime.jpg' 
           className={ styles.header__avatar }
         />
         </div>

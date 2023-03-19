@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import Home from "../pages/Home/Home";
 import { Header } from "../components/Header/Header";
-import { AnimeDetail } from "../pages";
+import { AnimeScreen } from "../pages";
 
 export const DashboardRoutes = () => {
   return (
@@ -9,7 +9,7 @@ export const DashboardRoutes = () => {
         <Header />
         <Routes>
             <Route path="/" element={ <Home /> } />
-            <Route path="/:id" element={ <AnimeDetail /> } />
+            <Route path="/:id" element={ <AnimeScreen /> } />
         </Routes>
     </>
   )

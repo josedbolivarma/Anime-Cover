@@ -1,38 +1,45 @@
 .header {
     width: 100%;
-    // padding: 2rem 0;
+    position: absolute;
+    z-index: 100;
     background-color: transparent;
     display: flex;
     align-items: center;
-
+    color: #FFF;
+    padding: .5rem 0;
     .header__logo {
         width: 200px;
         // height: 80px;
     }
 
     .header__container {
-        width: 90%;
+        width: 92%;
         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         .header__menu {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
+            gap: 4rem;
             align-items: center;
+            text-transform: uppercase;
         }
 
         .header__avatar {
             width: 80px;
             height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         .header__box {
             display: flex;
-            gap: .8rem;
+            align-items: center;
+            gap: 1.4rem;
         }
         
     }
