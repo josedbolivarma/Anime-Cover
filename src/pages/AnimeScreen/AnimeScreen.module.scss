@@ -7,12 +7,7 @@
 .anime__banner {
     padding-top: 1rem;
     padding-bottom: 3rem;
-//     -webkit-box-shadow: inset 0px -5px 84px 24px rgba(0,0,0,0.86);
-// -moz-box-shadow: inset 0px -5px 84px 24px rgba(0,0,0,0.86);
-// box-shadow: inset 0px -5px 84px 24px rgba(0,0,0,0.86);
-// clip-path: inset(0px -15px 0px 0px);
-// NOISE
-position: relative;
+    position: relative;
 }
 
 // Gradients
@@ -42,7 +37,7 @@ position: relative;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 80%;
+    bottom: 64%;
     background-image: linear-gradient(
         180deg,
         rgba(0,0,0,0.9),
@@ -72,4 +67,11 @@ position: relative;
     width: 580px;
     height: 86vh;
     object-fit: cover;
+}
+
+
+.container {
+    width: 92%;
+    margin: 0 auto;
+    padding: 5rem 0;
 }

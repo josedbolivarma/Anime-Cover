@@ -1,0 +1,52 @@
+.content {
+    width: 100%;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    z-index: 1000;
+    color: #FFF;
+}
+
+.description {
+    font-size: 1.1rem;
+}
+
+.text__content {
+    display: flex;
+    gap: .8rem;
+}
+
+.action__btn {
+    display: flex;
+    gap: .6rem;
+}
+
+.btn {
+    outline: none;
+    border: 2px solid #F8F8F8;
+    border-radius: 4px;
+    padding: .6rem 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .6px;
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+
+.btn:hover {
+    opacity: .9;
+}
+
+.btn__one {
+    background-color: #F8F8F8;
+    color: #000;
+}
+
+.btn__two {
+    color: #FFF;
+    background-color: transparent;
+}

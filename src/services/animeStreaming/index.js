@@ -37,7 +37,7 @@ export const animeStreamingServices = () => {
     const getCharactersStaff = (animeId) => {
         return instance({
             method: 'GET',
-            url: `/anime/${animeId}/characters_staff`
+            url: `/anime/${animeId}/characters`
         })
     }
 
@@ -49,11 +49,11 @@ export const animeStreamingServices = () => {
         })
     }
 
-    // Video promocional
+    // Videos de episodios
     const getVideos = (animeId) => {
         return instance({
             method: 'GET',
-            url: `/anime/${animeId}/videos`
+            url: `https://api.jikan.moe/v4/anime/${animeId}/videos/episodes?page=1`
         })
     }
 
@@ -100,6 +100,6 @@ export const animeStreamingServices = () => {
         getMoreInfo,
         getSearchAnimeByName,
         getCharacters,
-        getAnimeById
+        getAnimeById,
     }
 }

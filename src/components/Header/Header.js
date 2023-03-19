@@ -20,12 +20,13 @@ export const Header = () => {
         <h3>Genre</h3>
         <div className={ styles.header__box }>
         <h3>LOG IN</h3>
-        <img 
+        {/* <img 
           src='https://sportshub.cbsistatic.com/i/2022/05/17/ede30685-59f4-435a-a886-58fa06ba361a/bleach-sousuke-aizen-anime.jpg' 
           className={ styles.header__avatar }
-        />
+        /> */}
         </div>
       </div>
+      
       </div>
     </div>
   )
