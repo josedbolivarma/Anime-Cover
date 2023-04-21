@@ -32,6 +32,7 @@ export const AnimeScreen = () => {
     setEpisodeVideos(resEpisodeVideos);
   }
 
+  console.log(episodeVideos);
 
   useEffect(() => {
     getData();
